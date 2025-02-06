@@ -12,33 +12,36 @@ export default function Page() {
 
   const getNoButtonText = () => {
     const phrases = [
-      "No",
-      "Are you sure?",
-      "What if I asked really nicely?",
-      "Pretty please",
-      "With a chocolate rice cake on top",
-      "What about a matcha frostie",
-      "PLEASE POOKIE",
-      "But :*(",
-      "I am going to die",
-      "Yep im dead",
-      "ok ur talking to nathan's ghost",
-      "please babe",
+      "Nahi",
+      "Dubara soch lo?",
+      "Sach me nahi?",
+      "Ek baar aur socho?",
+      "Accha ek last time puch raha hoon",
+      "Ek chocolate dunga",
+      "Ek kinder joy bhi dunga",
+      "PLEASE BUBU",
+      "Par kyun? :*(",
+      "Mera dil toot gaya",
+      "Ab to mai mar gaya",
+      "Haan mai bhoot ban gaya ab",
+      "Please bebuuuu",
       ":((((",
-      "PRETTY PLEASE",
-      "Estoy muerto",
-      "No :(",
+      "Ekdum last time, please?",
+      "Maan jaao na baccha :(",
     ];
 
     return phrases[Math.min(noCount, phrases.length - 1)];
   };
 
   return (
-    <div className="-mt-16 flex h-screen flex-col items-center justify-center">
+    <div
+    className="absolute inset-0 flex flex-col items-center justify-center bg-cover bg-center bg-no-repeat"
+    style={{ backgroundImage: "url(will-you-be-my-valentine/src/assets/background.png)" }}
+  >
       {yesPressed ? (
         <>
           <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" />
-          <div className="my-4 text-4xl font-bold">WOOOOOO!!! I love you pookie!! ;))</div>
+          <div className="my-4 text-4xl font-bold">Yayyyyyyyy!!! I love you my kucchu pucchu pookie🥹💕</div>
         </>
       ) : (
         <>
@@ -46,20 +49,20 @@ export default function Page() {
             className="h-[200px]"
             src="https://gifdb.com/images/high/cute-love-bear-roses-ou7zho5oosxnpo6k.gif"
           />
-          <h1 className="my-4 text-4xl">Will you be my Valentine?</h1>
+          <h1 className="my-4 text-4xl">Will you be my Valentine Anannya❤️</h1>
           <div className="flex items-center">
             <button
               className={`mr-4 rounded bg-green-500 px-4 py-2 font-bold text-white hover:bg-green-700`}
               style={{ fontSize: yesButtonSize }}
               onClick={() => setYesPressed(true)}
             >
-              Yes
+              Hanjiiiii
             </button>
             <button
               onClick={handleNoClick}
               className=" rounded bg-red-500 px-4 py-2 font-bold text-white hover:bg-red-700"
             >
-              {noCount === 0 ? "No" : getNoButtonText()}
+              {noCount === 0 ? "Nahi" : getNoButtonText()}
             </button>
           </div>
         </>
