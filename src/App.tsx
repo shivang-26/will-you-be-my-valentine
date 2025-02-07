@@ -13,7 +13,7 @@ export default function Page() {
   const getNoButtonText = () => {
     const phrases = [
       "Nahi",
-      "Dubara soch lo?",
+      "Ek baar or soch lo?",
       "Sach me nahi?",
       "Ek baar aur sochlo?",
       "Accha ek last time puch raha hoon",
