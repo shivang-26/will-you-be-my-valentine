@@ -15,7 +15,7 @@ export default function Page() {
       "Nahi",
       "Dubara soch lo?",
       "Sach me nahi?",
-      "Ek baar aur socho?",
+      "Ek baar aur sochlo?",
       "Accha ek last time puch raha hoon",
       "Ek chocolate dunga",
       "Ek kinder joy bhi dunga",
